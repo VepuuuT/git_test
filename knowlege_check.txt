@@ -1,0 +1,42 @@
+1. How do you create a new repository on GitHub?
+You login and then click the "+" sign on the top right corner of the GitHub interface and then select "New repository" 
+
+2. How do you copy a repository onto your local machine from GitHub?
+On the GitHub repository you want to copy, click on the "Code" button (which is the green button on the right side), then copy the URL shown in the input box
+i)On your local machine, open a terminal or command prompt. This is where you'll enter the git commands.
+ii) If you want to clone the repository into a specific directory, navigate to that directory using the "cd" command. For example: cd /path/to/your/directory
+iii)In the terminal, use the "git clone" command followed by the repository URL you copied in step 1. It will look like this: git clone https://github.com/username/repository.git or git clone git@github.com:username/repository.git
+
+3. What is the default name of your remote connection. origin
+
+4. Explain what origin is in git push origin main? 
+Its the remote repository name that a project was originally cloned from
+
+5. Explain what main is in git push origin main.
+It is the branch name
+
+6. Explain the two-stage system that Git uses to save files.
+    -Working Directory: The first stage is the working directory where you make changes to your files.
+
+    -Staging Area (Index): The second stage is the staging area where you select which changes you want to include in the next commit.
+
+This two-stage process allows you to review and organize your changes before permanently saving them in the repository with a commit.
+
+7. How do you check the status of your current repository?
+Running the git status command
+
+8. How do you add files to the staging area in git?
+using the git add -A command or the git add . 
+
+9. How do you commit the files in the staging area and add a descriptive message?
+By using the "git add" command and passing necessary options
+e.g git commit -m "Edit README.md and hello_world.txt".
+
+10. How do you push your changes to your repository on GitHub?
+ Use the git push command followed by the remote name and the branch name you want to push to. e.g, if you are pushing changes to the "main" branch, and the remote name is "origin," you would use the following command:
+
+### git push origin main
+- If you are using a different branch, replace "main" with the name of your branch.
+
+11. How do you look at the history of your previous commits?
+By running git log command
